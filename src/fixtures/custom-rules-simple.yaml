@@ -1,0 +1,32 @@
+openapi: 3.1.0
+info:
+  title: test
+  version: 1.0.0
+  contact:
+    badfield: "test"
+paths:
+  /NO_KEBAB/keb-ab/NOKEB2_NO:
+    get:
+      operationId: nokebab
+  /keb-ab:
+    get:
+      operationId: kebab      
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        UPPERCASE:
+          type: integer
+        camelCase:
+          type: integer          
+  parameters:
+    foo:
+      in: query
+      name: NonCAMEL
+    foos:
+      in: query
+      name: camelCase      
+    bar:
+      name: NonCAMEL
+      in: cookie      
