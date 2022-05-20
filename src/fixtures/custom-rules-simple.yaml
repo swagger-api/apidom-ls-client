@@ -17,6 +17,7 @@ components:
       type: object
       properties:
         UPPERCASE:
+          x-acme-version: 1.0.0
           type: integer
         camelCase:
           type: integer          

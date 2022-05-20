@@ -10,6 +10,7 @@
     "outDir": "dist",
     "isolatedModules": false,
   },
+  "include": ["./node_modules/@swagger-api/apidom-ls/types/minim.d.ts"],
   "ts-node": {
     "files": true
   }
